@@ -91,27 +91,27 @@ export function Footer() {
             <h3 className="text-lg font-heading font-semibold mb-6">Contactez-nous</h3>
             <ul className="space-y-4">
               <li className="flex flex-col gap-2">
-                <a href="tel:+33200000000" className="flex items-center gap-3 group">
+                <a href="tel:+33759046370" className="flex items-center gap-3 group">
                   <div className="p-2 bg-secondary/20 rounded-lg group-hover:bg-secondary transition-colors">
                     <Phone className="h-5 w-5 text-secondary group-hover:text-white" />
                   </div>
                   <div>
                     <p className="text-xs text-primary-foreground/60 uppercase font-semibold">Urgences 24/7</p>
-                    <p className="text-lg font-bold text-white">02 00 00 00 00</p>
+                    <p className="text-lg font-bold text-white">07 59 04 63 70</p>
                   </div>
                 </a>
               </li>
               <li className="flex items-start gap-3 mt-4">
                 <MapPin className="h-5 w-5 text-secondary shrink-0 mt-1" />
                 <span className="text-primary-foreground/80 text-sm">
-                  123 Avenue de la République<br />
+                  Place Jean Vilar<br />
                   49000 Angers, France
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-secondary shrink-0" />
-                <a href="mailto:contact@depannage49.fr" className="text-primary-foreground/80 text-sm hover:text-secondary">
-                  contact@depannage49.fr
+                <a href="mailto:depannage49@gmail.com" className="text-primary-foreground/80 text-sm hover:text-secondary">
+                  depannage49@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">

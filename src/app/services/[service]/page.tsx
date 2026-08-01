@@ -98,7 +98,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <a href="/contact" className="flex items-center justify-center w-full py-3 px-4 bg-secondary text-white rounded-lg font-medium hover:bg-secondary/90 transition-colors mb-3">
                     Demander un devis
                   </a>
-                  <a href="tel:+33200000000" className="flex items-center justify-center w-full py-3 px-4 bg-slate-100 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition-colors">
+                  <a href="tel:+33759046370" className="flex items-center justify-center w-full py-3 px-4 bg-slate-100 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition-colors">
                     Appeler une urgence
                   </a>
                 </div>

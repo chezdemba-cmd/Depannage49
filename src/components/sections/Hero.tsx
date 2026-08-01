@@ -9,12 +9,13 @@ import { Phone, ArrowRight } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image & Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/presentation.png')" }}
-      >
-        <div className="absolute inset-0 bg-primary/70 backdrop-blur-[2px]" />
+      {/* Background Premium CSS */}
+      <div className="absolute inset-0 z-0 bg-primary">
+        {/* Gradients */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(245,124,0,0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(11,35,65,0.8),transparent_50%)]" />
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:24px_24px]" />
       </div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center text-white">
@@ -43,7 +44,7 @@ export function Hero() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <a 
-              href="tel:+33200000000"
+              href="tel:+33759046370"
               className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto text-lg h-14 px-8 bg-white/10 hover:bg-white/20 border-white/30 text-white backdrop-blur-md")}
             >
               <Phone className="mr-2 h-5 w-5" />

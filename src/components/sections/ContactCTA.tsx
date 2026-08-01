@@ -39,11 +39,11 @@ export function ContactCTA() {
                 Demander un devis
               </Link>
               <a 
-                href="tel:+33200000000"
+                href="tel:+33759046370"
                 className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto h-14 px-8 text-lg bg-white hover:bg-slate-50 text-primary border-0")}
               >
                 <PhoneCall className="mr-2 h-5 w-5" />
-                Appeler le 02 00 00 00 00
+                Appeler le 07 59 04 63 70
               </a>
             </div>
             

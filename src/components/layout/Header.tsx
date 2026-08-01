@@ -110,7 +110,7 @@ export function Header() {
               Demander un devis
             </Link>
             <a 
-              href="tel:+33200000000"
+              href="tel:+33759046370"
               className={cn(buttonVariants({ variant: "outline" }), "border-secondary text-secondary hover:bg-secondary hover:text-white group")}
             >
               <Phone className="mr-2 h-4 w-4 group-hover:animate-pulse" />
@@ -238,7 +238,7 @@ export function Header() {
                   Demander un devis
                 </Link>
                 <a 
-                  href="tel:+33200000000"
+                  href="tel:+33759046370"
                   className={cn(buttonVariants({ variant: "outline" }), "w-full border-secondary text-secondary")}
                 >
                   <Phone className="mr-2 h-4 w-4" />

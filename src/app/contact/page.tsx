@@ -26,14 +26,14 @@ export default function ContactPage() {
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href="tel:+33200000000"
+                href="tel:+33759046370"
                 className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto h-14 px-8 text-lg bg-secondary hover:bg-secondary/90 text-white shadow-lg")}
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Urgence 24/7 : 02 00 00 00 00
+                Urgence 24/7 : 07 59 04 63 70
               </a>
               <a 
-                href="https://wa.me/33600000000" 
+                href="https://wa.me/33759046370" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto h-14 px-8 text-lg border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white")}
@@ -57,21 +57,21 @@ export default function ContactPage() {
                   <MapPin className="h-8 w-8 text-secondary shrink-0" />
                   <div>
                     <h3 className="font-bold text-slate-800 mb-2">Adresse</h3>
-                    <p className="text-slate-600 text-sm">123 Avenue de la République<br/>49000 Angers, France</p>
+                    <p className="text-slate-600 text-sm">Place Jean Vilar<br/>49000 Angers, France</p>
                   </div>
                 </div>
                 <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex gap-4">
                   <Phone className="h-8 w-8 text-secondary shrink-0" />
                   <div>
                     <h3 className="font-bold text-slate-800 mb-2">Téléphone</h3>
-                    <p className="text-slate-600 text-sm">02 00 00 00 00<br/>06 00 00 00 00 (Urgences)</p>
+                    <p className="text-slate-600 text-sm">07 59 04 63 70<br/>07 59 04 63 70 (Urgences)</p>
                   </div>
                 </div>
                 <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex gap-4">
                   <Mail className="h-8 w-8 text-secondary shrink-0" />
                   <div>
                     <h3 className="font-bold text-slate-800 mb-2">Email</h3>
-                    <p className="text-slate-600 text-sm">contact@depannage49.fr<br/>devis@depannage49.fr</p>
+                    <p className="text-slate-600 text-sm">depannage49@gmail.com</p>
                   </div>
                 </div>
                 <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex gap-4">
@@ -123,7 +123,7 @@ export default function ContactPage() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Téléphone</Label>
-                      <Input id="phone" type="tel" placeholder="06 00 00 00 00" required />
+                      <Input id="phone" type="tel" placeholder="07 59 04 63 70" required />
                     </div>
                   </div>
 
