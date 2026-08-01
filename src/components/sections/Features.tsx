@@ -46,26 +46,15 @@ export function Features() {
                 alt="Pourquoi choisir Dépannage 49" 
                 width={800} 
                 height={1000} 
-                className="w-full aspect-[4/5] rounded-3xl shadow-2xl object-cover border-4 border-white"
+                className="w-full aspect-[4/5] rounded-3xl shadow-2xl object-cover border-4 border-white relative z-10"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-slate-100 max-w-xs hidden md:block">
-                <div className="flex items-center gap-4">
-                  <div className="bg-primary/10 p-3 rounded-full text-primary">
-                    <ThumbsUp className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-xl text-slate-800">98%</p>
-                    <p className="text-sm text-slate-500 font-medium">Clients satisfaits</p>
-                  </div>
-                </div>
-              </div>
             </motion.div>
           </div>
 
           <div className="w-full lg:w-1/2">
             <h2 className="text-secondary font-semibold uppercase tracking-wider text-sm mb-2">Nos Engagements</h2>
             <h3 className="text-3xl md:text-4xl font-bold font-heading text-primary mb-6">
-              Pourquoi faire appel à DÉPANNAGE 49 ?
+              Pourquoi faire appel à DÉPANNAGE&nbsp;49&nbsp;?
             </h3>
             <p className="text-muted-foreground text-lg mb-10">
               Nous combinons le professionnalisme des grands groupes et la proximité d'un artisan local pour vous offrir un service technique irréprochable.
@@ -93,6 +82,22 @@ export function Features() {
                 </motion.div>
               ))}
             </div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="mt-10 inline-flex items-center gap-5 bg-white p-6 rounded-2xl shadow-md border border-slate-100"
+            >
+              <div className="bg-primary/10 p-4 rounded-full text-primary">
+                <ThumbsUp className="h-8 w-8" />
+              </div>
+              <div>
+                <p className="font-bold text-3xl text-slate-800">98%</p>
+                <p className="text-slate-500 font-medium text-lg">Clients satisfaits de nos services</p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
