@@ -42,11 +42,11 @@ export function Features() {
             >
               <div className="absolute inset-0 bg-secondary/10 transform -skew-y-6 rounded-3xl -z-10"></div>
               <Image 
-                src="/flyers.png" 
+                src="/features_image.jpg" 
                 alt="Pourquoi choisir Dépannage 49" 
-                width={600} 
-                height={600} 
-                className="w-full h-auto rounded-2xl shadow-xl object-cover"
+                width={800} 
+                height={1000} 
+                className="w-full aspect-[4/5] rounded-3xl shadow-2xl object-cover border-4 border-white"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-slate-100 max-w-xs hidden md:block">
                 <div className="flex items-center gap-4">
