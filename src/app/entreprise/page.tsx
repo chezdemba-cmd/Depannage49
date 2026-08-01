@@ -29,11 +29,19 @@ const valeurs = [
 export default function EntreprisePage() {
   return (
     <>
-      <div className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
-        <div className="container mx-auto px-4 md:px-6">
+      <div className="relative py-24 md:py-32 overflow-hidden">
+        <Image 
+          src="/entreprise_hero.jpg"
+          alt="Bâtiment moderne"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-primary/85 backdrop-blur-[2px]"></div>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-6">Notre Entreprise</h1>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <h1 className="text-5xl md:text-6xl font-bold font-heading text-white mb-6 drop-shadow-md">Notre Entreprise</h1>
+            <p className="text-xl text-white/90 leading-relaxed font-medium">
               DÉPANNAGE 49 est née d'une volonté simple : apporter aux particuliers et aux professionnels du Maine-et-Loire un service technique de très haute qualité, alliant la rigueur des grands groupes à la proximité d'un artisan local.
             </p>
           </div>
@@ -71,9 +79,9 @@ export default function EntreprisePage() {
               </ul>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl h-[400px]">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] md:h-[500px] border-4 border-white">
                 <Image 
-                  src="/presentation.png" 
+                  src="/entreprise_team.jpg" 
                   alt="Notre équipe en intervention" 
                   fill
                   className="object-cover"
