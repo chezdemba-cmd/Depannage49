@@ -71,7 +71,7 @@ export default function ContactPage() {
                   <Mail className="h-8 w-8 text-secondary shrink-0" />
                   <div>
                     <h3 className="font-bold text-slate-800 mb-2">Email</h3>
-                    <p className="text-slate-600 text-sm">depannage49@gmail.com</p>
+                    <p className="text-slate-600 text-sm">49depannage@gmail.com</p>
                   </div>
                 </div>
                 <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex gap-4">
