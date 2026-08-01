@@ -68,26 +68,26 @@ export default function ClientsPage() {
                 <div className="flex-1">
                   <h2 className="text-2xl md:text-3xl font-bold font-heading text-primary mb-6">{client.title}</h2>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                      <h3 className="font-semibold text-slate-800 mb-2 flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-red-500"></span>
+                    <div className="bg-primary text-white rounded-xl p-5 shadow-md transition-transform hover:-translate-y-1">
+                      <h3 className="font-semibold mb-2 flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-red-400"></span>
                         Vos Besoins
                       </h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">{client.besoins}</p>
+                      <p className="text-white/80 text-sm leading-relaxed">{client.besoins}</p>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                      <h3 className="font-semibold text-slate-800 mb-2 flex items-center gap-2">
+                    <div className="bg-primary text-white rounded-xl p-5 shadow-md transition-transform hover:-translate-y-1">
+                      <h3 className="font-semibold mb-2 flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-secondary"></span>
                         Nos Solutions
                       </h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">{client.solutions}</p>
+                      <p className="text-white/80 text-sm leading-relaxed">{client.solutions}</p>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                      <h3 className="font-semibold text-slate-800 mb-2 flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-green-500"></span>
+                    <div className="bg-primary text-white rounded-xl p-5 shadow-md transition-transform hover:-translate-y-1">
+                      <h3 className="font-semibold mb-2 flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-green-400"></span>
                         Bénéfices
                       </h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">{client.benefices}</p>
+                      <p className="text-white/80 text-sm leading-relaxed">{client.benefices}</p>
                     </div>
                   </div>
                 </div>
