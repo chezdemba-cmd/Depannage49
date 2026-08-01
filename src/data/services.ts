@@ -10,6 +10,7 @@ export type ServiceData = {
   color: string;
   bg: string;
   image: string;
+  imageSecondary: string;
 };
 
 export const servicesData: Record<string, ServiceData> = {
@@ -26,6 +27,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-blue-500",
     bg: "bg-blue-50",
     image: "/rea_plomberie.png",
+    imageSecondary: "/service_plomberie_2.png",
   },
   "electricite": {
     id: "electricite",
@@ -40,6 +42,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-yellow-500",
     bg: "bg-yellow-50",
     image: "/rea_electricite.png",
+    imageSecondary: "/service_electricite_2.png",
   },
   "chauffage": {
     id: "chauffage",
@@ -54,6 +57,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-red-500",
     bg: "bg-red-50",
     image: "/service_chauffage.png",
+    imageSecondary: "/service_chauffage_2.png",
   },
   "climatisation": {
     id: "climatisation",
@@ -68,6 +72,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-cyan-500",
     bg: "bg-cyan-50",
     image: "/rea_clim.png",
+    imageSecondary: "/service_clim_2.png",
   },
   "serrurerie": {
     id: "serrurerie",
@@ -82,6 +87,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-slate-500",
     bg: "bg-slate-50",
     image: "/rea_serrurerie.png",
+    imageSecondary: "/service_serrurerie_2.png",
   },
   "vitrerie": {
     id: "vitrerie",
@@ -96,6 +102,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-indigo-500",
     bg: "bg-indigo-50",
     image: "/service_vitrerie.png",
+    imageSecondary: "/service_vitrerie_2.png",
   },
   "eclairage": {
     id: "eclairage",
@@ -110,6 +117,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-amber-500",
     bg: "bg-amber-50",
     image: "/service_eclairage.png",
+    imageSecondary: "/service_eclairage_2.png",
   }
 };
 

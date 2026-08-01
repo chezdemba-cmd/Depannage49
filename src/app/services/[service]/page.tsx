@@ -90,9 +90,8 @@ export default async function ServiceDetailPage({ params }: Props) {
             <div className="w-full lg:w-1/3">
               <div className="sticky top-32 rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-white">
                 <div className="h-48 relative bg-slate-200">
-                   {/* Fallback pattern if image is not specific */}
                    <Image 
-                     src={service.image} 
+                     src={service.imageSecondary} 
                      alt={`Intervention ${service.title}`} 
                      fill
                      className="object-cover"
