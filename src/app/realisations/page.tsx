@@ -39,10 +39,12 @@ export default function RealisationsPage() {
     <>
       <div className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-6">Nos Réalisations</h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Quelques exemples de nos interventions récentes dans le Maine-et-Loire. Des professionnels à votre service pour des résultats impeccables.
-          </p>
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-6">Nos Réalisations</h1>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Quelques exemples de nos interventions récentes dans le <span className="whitespace-nowrap">Maine-et-Loire</span>. Des professionnels à votre service pour des résultats impeccables.
+            </p>
+          </div>
         </div>
       </div>
 

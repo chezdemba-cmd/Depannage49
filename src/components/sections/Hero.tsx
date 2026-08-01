@@ -29,7 +29,7 @@ export function Hero() {
             Intervention rapide 24/7 dans tout le 49
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold font-heading tracking-tight leading-tight">
-            Votre partenaire technique de proximité dans le <span className="text-secondary">Maine-et-Loire</span>
+            Votre partenaire technique de proximité dans le <span className="text-secondary whitespace-nowrap">Maine-et-Loire</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-200 max-w-3xl mx-auto font-light">
             Plomberie • Électricité • Chauffage • Climatisation • Serrurerie • Vitrerie • Éclairage

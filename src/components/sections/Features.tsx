@@ -7,7 +7,7 @@ import Image from "next/image";
 const features = [
   {
     title: "Réactivité garantie",
-    description: "Intervention rapide 24h/24 et 7j/7 pour toutes vos urgences dans le Maine-et-Loire.",
+    description: "Intervention rapide 24h/24 et 7j/7 pour toutes vos urgences dans le Maine\u2011et\u2011Loire.",
     icon: Clock,
   },
   {

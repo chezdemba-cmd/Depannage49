@@ -17,7 +17,7 @@ export function Footer() {
               className="h-12 w-auto bg-white p-2 rounded-md object-contain"
             />
             <p className="text-primary-foreground/80 text-sm mt-4 leading-relaxed">
-              Votre partenaire technique de confiance dans le Maine-et-Loire. 
+              Votre partenaire technique de confiance dans le <span className="whitespace-nowrap">Maine-et-Loire</span>. 
               Interventions rapides et professionnelles pour particuliers et professionnels.
             </p>
           </div>

@@ -20,7 +20,7 @@ export const servicesData: Record<string, ServiceData> = {
     icon: Droplet,
     description: "Recherche de fuites, installations sanitaires et dépannage d'urgence.",
     content: [
-      "Intervention rapide pour tout problème de plomberie dans le Maine-et-Loire.",
+      "Intervention rapide pour tout problème de plomberie dans le Maine\u2011et\u2011Loire.",
       "Nos plombiers certifiés sont équipés pour diagnostiquer et réparer efficacement toutes vos installations, qu'il s'agisse de tuyauterie ancienne ou de systèmes récents."
     ],
     features: ["Recherche de fuite", "Installation", "Sanitaires", "Chauffe-eau", "Dépannage"],

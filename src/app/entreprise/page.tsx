@@ -42,7 +42,7 @@ export default function EntreprisePage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold font-heading text-white mb-6 drop-shadow-md">Notre Entreprise</h1>
             <p className="text-xl text-white/90 leading-relaxed font-medium">
-              DÉPANNAGE 49 est née d'une volonté simple : apporter aux particuliers et aux professionnels du Maine-et-Loire un service technique de très haute qualité, alliant la rigueur des grands groupes à la proximité d'un artisan local.
+              DÉPANNAGE 49 est née d'une volonté simple : apporter aux particuliers et aux professionnels du <span className="whitespace-nowrap">Maine-et-Loire</span> un service technique de très haute qualité, alliant la rigueur des grands groupes à la proximité d'un artisan local.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function EntreprisePage() {
             <div className="w-full lg:w-1/2">
               <h2 className="text-secondary font-semibold uppercase tracking-wider text-sm mb-2">Notre Vision</h2>
               <h3 className="text-3xl md:text-4xl font-bold font-heading text-primary mb-6">
-                Devenir la référence technique incontournable du Maine-et-Loire
+                Devenir la référence technique incontournable du <span className="whitespace-nowrap">Maine-et-Loire</span>
               </h3>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>

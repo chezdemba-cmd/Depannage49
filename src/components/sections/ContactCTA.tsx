@@ -26,8 +26,8 @@ export function ContactCTA() {
             <h2 className="text-3xl md:text-5xl font-bold font-heading text-white mb-6">
               Besoin d'une intervention rapide ?
             </h2>
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-              Nos équipes sont prêtes à intervenir dans tout le Maine-et-Loire. Demandez votre devis gratuit dès maintenant.
+            <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Nos équipes sont prêtes à intervenir dans tout le <span className="whitespace-nowrap">Maine-et-Loire</span>. Demandez votre devis gratuit dès maintenant.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
