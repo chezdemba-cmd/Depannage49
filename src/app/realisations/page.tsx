@@ -12,25 +12,25 @@ const realisations = [
     title: "Rénovation de tableau électrique",
     category: "Électricité",
     description: "Mise aux normes complète d'un tableau électrique pour un appartement ancien à Angers.",
-    image: "/presentation.png", // placeholder
+    image: "/rea_electricite.png",
   },
   {
     title: "Installation climatisation réversible",
     category: "Climatisation",
     description: "Pose d'un système multi-split dans des bureaux d'entreprise.",
-    image: "/presentation.png", // placeholder
+    image: "/rea_clim.png",
   },
   {
     title: "Remplacement chauffe-eau",
     category: "Plomberie",
     description: "Intervention d'urgence suite à une fuite sur un chauffe-eau de 200L.",
-    image: "/presentation.png", // placeholder
+    image: "/rea_plomberie.png",
   },
   {
     title: "Sécurisation suite effraction",
     category: "Serrurerie",
     description: "Remplacement de serrure 3 points et pose de blindage sur porte palière.",
-    image: "/presentation.png", // placeholder
+    image: "/rea_serrurerie.png",
   },
 ];
 
