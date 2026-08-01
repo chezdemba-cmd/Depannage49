@@ -33,7 +33,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <div className={`py-16 md:py-24 ${service.bg}`}>
+      <div className="py-16 md:py-24 bg-primary text-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             <div className="w-full md:w-2/3">
@@ -41,11 +41,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <div className={`p-4 rounded-2xl bg-white shadow-sm border border-white/50`}>
                   <service.icon className={`h-10 w-10 ${service.color}`} />
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold font-heading text-slate-800">
+                <h1 className="text-4xl md:text-5xl font-bold font-heading text-white">
                   {service.title}
                 </h1>
               </div>
-              <p className="text-xl text-slate-700 leading-relaxed mb-8">
+              <p className="text-xl text-white/90 leading-relaxed mb-8">
                 {service.description}
               </p>
             </div>
