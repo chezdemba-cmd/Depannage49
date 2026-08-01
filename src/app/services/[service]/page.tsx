@@ -35,31 +35,28 @@ export default async function ServiceDetailPage({ params }: Props) {
     <>
       <div className="py-16 md:py-24 bg-primary text-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-            <div className="w-full md:w-2/3">
-              <div className="flex items-center gap-4 mb-6">
-                <div className={`p-4 rounded-2xl bg-white shadow-sm border border-white/50`}>
-                  <service.icon className={`h-10 w-10 ${service.color}`} />
-                </div>
-                <h1 className="text-4xl md:text-5xl font-bold font-heading text-white">
-                  {service.title}
-                </h1>
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-4 mb-8">
+              <div className={`p-4 rounded-2xl bg-white shadow-sm border border-white/50 shrink-0`}>
+                <service.icon className={`h-10 w-10 ${service.color}`} />
               </div>
-              <p className="text-xl text-white/90 leading-relaxed mb-8">
-                {service.description}
-              </p>
+              <h1 className="text-4xl md:text-5xl font-bold font-heading text-white">
+                {service.title}
+              </h1>
+            </div>
+
+            <div className="relative h-[300px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 mb-8">
+              <Image 
+                src={service.image} 
+                alt={`Intervention en ${service.title}`} 
+                fill
+                className="object-cover"
+              />
             </div>
             
-            <div className="w-full md:w-1/2 relative hidden md:block">
-              <div className="relative h-[300px] lg:h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-                <Image 
-                  src={service.image} 
-                  alt={`Intervention en ${service.title}`} 
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed font-medium">
+              {service.description}
+            </p>
           </div>
         </div>
       </div>
