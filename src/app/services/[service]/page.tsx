@@ -49,6 +49,17 @@ export default async function ServiceDetailPage({ params }: Props) {
                 {service.description}
               </p>
             </div>
+            
+            <div className="w-full md:w-1/2 relative hidden md:block">
+              <div className="relative h-[300px] lg:h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <Image 
+                  src={service.image} 
+                  alt={`Intervention en ${service.title}`} 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +95,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <div className="h-48 relative bg-slate-200">
                    {/* Fallback pattern if image is not specific */}
                    <Image 
-                     src="/presentation.png" 
+                     src={service.image} 
                      alt={`Intervention ${service.title}`} 
                      fill
                      className="object-cover"

@@ -9,6 +9,7 @@ export type ServiceData = {
   features: string[];
   color: string;
   bg: string;
+  image: string;
 };
 
 export const servicesData: Record<string, ServiceData> = {
@@ -24,6 +25,7 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Recherche de fuite", "Installation", "Sanitaires", "Chauffe-eau", "Dépannage"],
     color: "text-blue-500",
     bg: "bg-blue-50",
+    image: "/rea_plomberie.png",
   },
   "electricite": {
     id: "electricite",
@@ -37,6 +39,7 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Installation", "Dépannage", "Mise aux normes", "Courant fort", "Tableaux électriques", "Éclairage"],
     color: "text-yellow-500",
     bg: "bg-yellow-50",
+    image: "/rea_electricite.png",
   },
   "chauffage": {
     id: "chauffage",
@@ -50,6 +53,7 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Installation", "Entretien", "Dépannage", "Radiateurs", "Chaudières"],
     color: "text-red-500",
     bg: "bg-red-50",
+    image: "/service_chauffage.png",
   },
   "climatisation": {
     id: "climatisation",
@@ -63,6 +67,7 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Installation", "Maintenance", "Entretien", "Climatisation réversible"],
     color: "text-cyan-500",
     bg: "bg-cyan-50",
+    image: "/rea_clim.png",
   },
   "serrurerie": {
     id: "serrurerie",
@@ -76,10 +81,11 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Ouverture de porte", "Blindage", "Remplacement de serrure", "Sécurisation"],
     color: "text-slate-500",
     bg: "bg-slate-50",
+    image: "/rea_serrurerie.png",
   },
   "vitrerie": {
     id: "vitrerie",
-    title: "Vitrerie",
+    title: "Vitrerie / Ouvrants",
     icon: Maximize,
     description: "Remplacement de double vitrage, vitrines et fenêtres.",
     content: [
@@ -89,6 +95,7 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Remplacement de vitrage", "Double vitrage", "Vitrines", "Fenêtres"],
     color: "text-indigo-500",
     bg: "bg-indigo-50",
+    image: "/service_vitrerie.png",
   },
   "eclairage": {
     id: "eclairage",
@@ -102,6 +109,7 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Éclairage public", "Éclairage domestique", "LED", "Maintenance"],
     color: "text-amber-500",
     bg: "bg-amber-50",
+    image: "/service_eclairage.png",
   }
 };
 
