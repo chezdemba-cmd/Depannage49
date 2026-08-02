@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Building2, Home, Building, Utensils, Hotel, Key } from "lucide-react";
+import { Building2, Home, Building, Utensils, Hotel, Key, Landmark } from "lucide-react";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {
@@ -42,6 +42,13 @@ const clients = [
     besoins: "Interventions d'urgence entre deux locations.",
     solutions: "Service prioritaire, réparation express, compte-rendu digital immédiat.",
     benefices: "Avis voyageurs préservés, rentabilité optimisée.",
+  },
+  {
+    title: "Collectivités & Secteur Public",
+    icon: Landmark,
+    besoins: "Entretien des bâtiments communaux, mise aux normes des ERP, interventions d'urgence.",
+    solutions: "Partenariat de confiance, respect strict des procédures, astreinte technique dédiée.",
+    benefices: "Maîtrise des budgets, sécurité du public garantie, pérennité des infrastructures.",
   },
 ];
 
