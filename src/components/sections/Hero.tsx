@@ -37,7 +37,7 @@ export function Hero() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <Link 
-              href="/contact"
+              href="#devis"
               className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto text-lg h-14 px-8 bg-secondary hover:bg-secondary/90 text-white border-0 shadow-lg shadow-secondary/20")}
             >
               Demander un devis gratuit

@@ -104,7 +104,7 @@ export function Header() {
 
           <div className="hidden md:flex items-center gap-4">
             <Link 
-              href="/contact"
+              href="#devis"
               className={cn(buttonVariants(), "bg-primary hover:bg-primary/90 text-white font-medium")}
             >
               Demander un devis
@@ -231,7 +231,7 @@ export function Header() {
               </div>
               <div className="p-4 border-t flex flex-col gap-3">
                 <Link 
-                  href="/contact" 
+                  href="#devis" 
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(buttonVariants(), "w-full bg-primary")}
                 >
