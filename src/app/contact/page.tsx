@@ -8,12 +8,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 
 export default function ContactPage() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real app, this would send data to an API
-    alert("Votre demande a bien été envoyée. Nous vous recontacterons dans les plus brefs délais.");
-  };
-
   return (
     <>
       <div className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
@@ -104,26 +98,31 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold font-heading text-primary mb-2">Demande de devis en ligne</h2>
                 <p className="text-slate-500 mb-8">Remplissez le formulaire, nous vous répondrons sous 24h.</p>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form action="https://formsubmit.co/49depannage@gmail.com" method="POST" className="space-y-6">
+                  <input type="hidden" name="_subject" value="Nouvelle demande de contact - Site Web" />
+                  <input type="hidden" name="_captcha" value="true" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="text" name="_honey" style={{ display: 'none' }} />
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="firstname">Prénom</Label>
-                      <Input id="firstname" placeholder="Jean" required />
+                      <Input id="firstname" name="Prénom" placeholder="Jean" required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="lastname">Nom</Label>
-                      <Input id="lastname" placeholder="Dupont" required />
+                      <Input id="lastname" name="Nom" placeholder="Dupont" required />
                     </div>
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="jean.dupont@email.com" required />
+                      <Input id="email" name="email" type="email" placeholder="jean.dupont@email.com" required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Téléphone</Label>
-                      <Input id="phone" type="tel" placeholder="07 59 04 63 70" required />
+                      <Input id="phone" name="Téléphone" type="tel" placeholder="07 59 04 63 70" required />
                     </div>
                   </div>
 
@@ -131,10 +130,12 @@ export default function ContactPage() {
                     <Label htmlFor="service">Type de demande</Label>
                     <select 
                       id="service" 
+                      name="Service concerné"
                       className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                       required
+                      defaultValue=""
                     >
-                      <option value="" disabled selected>Sélectionnez un domaine</option>
+                      <option value="" disabled>Sélectionnez un domaine</option>
                       <option value="plomberie">Plomberie</option>
                       <option value="electricite">Électricité</option>
                       <option value="chauffage">Chauffage / Climatisation</option>
@@ -148,6 +149,7 @@ export default function ContactPage() {
                     <Label htmlFor="message">Votre message</Label>
                     <Textarea 
                       id="message" 
+                      name="Message"
                       placeholder="Décrivez votre problème ou votre projet avec le plus de détails possible..." 
                       className="min-h-[150px]"
                       required

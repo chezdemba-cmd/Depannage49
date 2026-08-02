@@ -70,8 +70,11 @@ export function QuoteModal() {
           <form action="https://formsubmit.co/49depannage@gmail.com" method="POST" className="space-y-6">
             <input type="hidden" name="_subject" value="Nouvelle demande de devis - Site Web" />
             <input type="hidden" name="_next" value={origin ? `${origin}/?success=true` : ""} />
-            <input type="hidden" name="_captcha" value="false" />
+            {/* Activation du ReCAPTCHA pour bloquer les bots */}
+            <input type="hidden" name="_captcha" value="true" />
             <input type="hidden" name="_template" value="table" />
+            {/* Honeypot field : invisible pour les humains, rempli par les bots */}
+            <input type="text" name="_honey" style={{ display: 'none' }} />
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
