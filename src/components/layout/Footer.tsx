@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function Footer() {
   return (
@@ -20,18 +20,6 @@ export function Footer() {
               Votre partenaire technique de confiance dans le <span className="whitespace-nowrap">Maine-et-Loire</span>. 
               Interventions rapides et professionnelles pour particuliers et professionnels.
             </p>
-            <div className="flex items-center gap-4 pt-4">
-              <a href="https://www.facebook.com/profile.php?id=61593003201620" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-secondary hover:text-white transition-colors text-primary-foreground">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a href="https://tiktok.com/@fresh_propre" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/10 rounded-full hover:bg-secondary hover:text-white transition-colors text-primary-foreground">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
-                </svg>
-                <span className="sr-only">TikTok</span>
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}

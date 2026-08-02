@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
-import { Menu, X, Phone, ChevronDown, Facebook } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -103,18 +103,6 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-1 mr-1">
-              <a href="https://www.facebook.com/profile.php?id=61593003201620" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-500 hover:text-secondary transition-colors">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a href="https://tiktok.com/@fresh_propre" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-500 hover:text-secondary transition-colors">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
-                </svg>
-                <span className="sr-only">TikTok</span>
-              </a>
-            </div>
             <a 
               href="#devis"
               className={cn(buttonVariants(), "bg-primary hover:bg-primary/90 text-white font-medium")}
@@ -242,18 +230,6 @@ export function Header() {
                 </nav>
               </div>
               <div className="p-4 border-t flex flex-col gap-3">
-                <div className="flex items-center justify-center gap-4 mb-2">
-                  <a href="https://www.facebook.com/profile.php?id=61593003201620" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-400 hover:text-secondary transition-colors">
-                    <Facebook className="h-6 w-6" />
-                    <span className="sr-only">Facebook</span>
-                  </a>
-                  <a href="https://tiktok.com/@fresh_propre" target="_blank" rel="noopener noreferrer" className="p-2 text-slate-400 hover:text-secondary transition-colors">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                      <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
-                    </svg>
-                    <span className="sr-only">TikTok</span>
-                  </a>
-                </div>
                 <a 
                   href="#devis" 
                   onClick={() => setMobileMenuOpen(false)}
