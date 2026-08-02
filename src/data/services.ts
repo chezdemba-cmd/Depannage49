@@ -117,7 +117,7 @@ export const servicesData: Record<string, ServiceData> = {
     color: "text-amber-500",
     bg: "bg-amber-50",
     image: "/service_eclairage.png",
-    imageSecondary: "/service_eclairage_2.png",
+    imageSecondary: "/service_eclairage_new.png",
   }
 };
 

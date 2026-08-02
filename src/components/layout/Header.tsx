@@ -103,12 +103,12 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Link 
+            <a 
               href="#devis"
               className={cn(buttonVariants(), "bg-primary hover:bg-primary/90 text-white font-medium")}
             >
               Demander un devis
-            </Link>
+            </a>
             <a 
               href="tel:+33759046370"
               className={cn(buttonVariants({ variant: "outline" }), "border-secondary text-secondary hover:bg-secondary hover:text-white group")}
@@ -230,13 +230,13 @@ export function Header() {
                 </nav>
               </div>
               <div className="p-4 border-t flex flex-col gap-3">
-                <Link 
+                <a 
                   href="#devis" 
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(buttonVariants(), "w-full bg-primary")}
                 >
                   Demander un devis
-                </Link>
+                </a>
                 <a 
                   href="tel:+33759046370"
                   className={cn(buttonVariants({ variant: "outline" }), "w-full border-secondary text-secondary")}

@@ -26,8 +26,21 @@ export function QuoteModal() {
     // Check on mount
     handleHashChange();
 
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const link = target.closest("a");
+      if (link && link.getAttribute("href")?.includes("#devis")) {
+        setIsOpen(true);
+        document.body.style.overflow = "hidden";
+      }
+    };
+
     window.addEventListener("hashchange", handleHashChange);
-    return () => window.removeEventListener("hashchange", handleHashChange);
+    window.addEventListener("click", handleClick);
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("click", handleClick);
+    };
   }, []);
 
   if (!isOpen) return null;

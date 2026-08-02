@@ -36,13 +36,13 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
-            <Link 
+            <a 
               href="#devis"
               className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto text-lg h-14 px-8 bg-secondary hover:bg-secondary/90 text-white border-0 shadow-lg shadow-secondary/20")}
             >
               Demander un devis gratuit
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            </a>
             <a 
               href="tel:+33759046370"
               className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto text-lg h-14 px-8 bg-white/10 hover:bg-white/20 border-white/30 text-white backdrop-blur-md")}

@@ -31,13 +31,13 @@ export function ContactCTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Link 
+              <a 
                 href="#devis"
                 className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto h-14 px-8 text-lg bg-secondary hover:bg-secondary/90 text-white shadow-lg shadow-secondary/25")}
               >
                 <Calendar className="mr-2 h-5 w-5" />
                 Demander un devis
-              </Link>
+              </a>
               <a 
                 href="tel:+33759046370"
                 className={cn(buttonVariants({ size: "lg", variant: "outline" }), "w-full sm:w-auto h-14 px-8 text-lg bg-white hover:bg-slate-50 text-primary border-0")}
