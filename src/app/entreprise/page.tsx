@@ -42,7 +42,7 @@ export default function EntreprisePage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold font-heading text-white mb-6 drop-shadow-md">Notre Entreprise</h1>
             <p className="text-xl text-white/90 leading-relaxed font-medium">
-              DÉPANNAGE 49 est née d'une volonté simple : apporter aux particuliers et aux professionnels du <span className="whitespace-nowrap">Maine-et-Loire</span> un service technique de très haute qualité, alliant la rigueur des grands groupes à la proximité d'un artisan local.
+              DÉPANNAGE 49 est née d&apos;une volonté simple : apporter aux particuliers et aux professionnels du <span className="whitespace-nowrap">Maine-et-Loire</span> un service technique de très haute qualité, alliant la rigueur des grands groupes à la proximité d&apos;un artisan local.
             </p>
           </div>
         </div>
@@ -58,10 +58,10 @@ export default function EntreprisePage() {
               </h3>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  Dans un monde où les technologies du bâtiment évoluent rapidement, nous croyons qu'il est essentiel de pouvoir s'appuyer sur un partenaire de confiance, capable d'intervenir sur une multitude de corps d'état avec le même niveau d'exigence.
+                  Dans un monde où les technologies du bâtiment évoluent rapidement, nous croyons qu&apos;il est essentiel de pouvoir s&apos;appuyer sur un partenaire de confiance, capable d&apos;intervenir sur une multitude de corps d&apos;état avec le même niveau d&apos;exigence.
                 </p>
                 <p>
-                  Notre structure s'inspire des méthodes des grandes entreprises de services techniques, tout en conservant une taille humaine qui nous permet d'être réactifs et adaptables à chaque situation.
+                  Notre structure s&apos;inspire des méthodes des grandes entreprises de services techniques, tout en conservant une taille humaine qui nous permet d&apos;être réactifs et adaptables à chaque situation.
                 </p>
               </div>
               
@@ -97,7 +97,7 @@ export default function EntreprisePage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Nos Valeurs</h2>
             <p className="text-primary-foreground/80 text-lg">
-              Chaque intervention que nous réalisons est guidée par trois piliers fondamentaux qui font l'ADN de DÉPANNAGE 49.
+              Chaque intervention que nous réalisons est guidée par trois piliers fondamentaux qui font l&apos;ADN de DÉPANNAGE 49.
             </p>
           </div>
           

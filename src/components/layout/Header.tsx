@@ -59,7 +59,7 @@ export function Header() {
               href="/entreprise"
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              L'entreprise
+              L&apos;entreprise
             </Link>
             
             <div className="relative group">
@@ -169,7 +169,7 @@ export function Header() {
                     onClick={() => setMobileMenuOpen(false)}
                     className="text-lg font-medium"
                   >
-                    L'entreprise
+                    L&apos;entreprise
                   </Link>
                   <div className="flex flex-col gap-4">
                     <button

@@ -57,7 +57,7 @@ export function Features() {
               Pourquoi faire appel à DÉPANNAGE&nbsp;49&nbsp;?
             </h3>
             <p className="text-muted-foreground text-lg mb-10">
-              Nous combinons le professionnalisme des grands groupes et la proximité d'un artisan local pour vous offrir un service technique irréprochable.
+              Nous combinons le professionnalisme des grands groupes et la proximité d&apos;un artisan local pour vous offrir un service technique irréprochable.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

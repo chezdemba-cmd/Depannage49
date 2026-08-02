@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Building2, Home, Building, Utensils, Hotel, Key, Landmark } from "lucide-react";
+import { Building2, Home, Building, Utensils, Key, Landmark } from "lucide-react";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 
 export const metadata: Metadata = {

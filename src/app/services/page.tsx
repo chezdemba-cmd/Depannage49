@@ -18,7 +18,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-6">Nos Services</h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            DÉPANNAGE 49 regroupe plusieurs corps de métiers pour répondre à tous vos besoins d'installation, de maintenance et de dépannage.
+            DÉPANNAGE 49 regroupe plusieurs corps de métiers pour répondre à tous vos besoins d&apos;installation, de maintenance et de dépannage.
           </p>
         </div>
       </div>

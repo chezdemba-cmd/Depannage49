@@ -28,7 +28,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/entreprise" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">
-                  L'entreprise
+                  L&apos;entreprise
                 </Link>
               </li>
               <li>

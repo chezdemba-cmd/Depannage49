@@ -15,7 +15,7 @@ export default function PourquoiNousPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-6">Pourquoi Nous Choisir ?</h1>
             <p className="text-lg text-slate-600 leading-relaxed">
-              DÉPANNAGE 49 s'engage au quotidien pour vous offrir un service irréprochable. De la prise d'appel à la fin du chantier, notre objectif est votre entière satisfaction.
+              DÉPANNAGE 49 s&apos;engage au quotidien pour vous offrir un service irréprochable. De la prise d&apos;appel à la fin du chantier, notre objectif est votre entière satisfaction.
             </p>
           </div>
         </div>

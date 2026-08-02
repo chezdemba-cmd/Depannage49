@@ -98,7 +98,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                    />
                 </div>
                 <div className="p-8">
-                  <h3 className="text-xl font-bold font-heading text-primary mb-4">Besoin d'un devis ?</h3>
+                  <h3 className="text-xl font-bold font-heading text-primary mb-4">Besoin d&apos;un devis ?</h3>
                   <p className="text-slate-600 mb-6 text-sm">
                     Obtenez une estimation rapide et gratuite pour vos travaux de {service.title.toLowerCase()}.
                   </p>

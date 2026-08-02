@@ -15,7 +15,7 @@ export default function ContactPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-6">Contactez-nous</h1>
             <p className="text-lg text-slate-600 leading-relaxed mb-8">
-              Une urgence ? Un projet d'installation ? Remplissez le formulaire ci-dessous ou contactez-nous directement par téléphone ou WhatsApp.
+              Une urgence ? Un projet d&apos;installation ? Remplissez le formulaire ci-dessous ou contactez-nous directement par téléphone ou WhatsApp.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

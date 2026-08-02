@@ -13,7 +13,7 @@ export default function ConfidentialitePage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold font-heading text-primary mb-6">Politique de Confidentialité</h1>
             <p className="text-lg text-slate-600 leading-relaxed">
-              DÉPANNAGE 49 s'engage à protéger la vie privée de ses utilisateurs et la confidentialité de leurs données personnelles.
+              DÉPANNAGE 49 s&apos;engage à protéger la vie privée de ses utilisateurs et la confidentialité de leurs données personnelles.
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function ConfidentialitePage() {
               <li>Nous contactez par téléphone ou par email</li>
             </ul>
             <p>
-              Les données collectées peuvent inclure : votre nom, prénom, adresse postale, adresse email, numéro de téléphone, ainsi que toute information liée à votre demande d'intervention.
+              Les données collectées peuvent inclure : votre nom, prénom, adresse postale, adresse email, numéro de téléphone, ainsi que toute information liée à votre demande d&apos;intervention.
             </p>
 
             <h2>2. Utilisation des données</h2>
@@ -40,7 +40,7 @@ export default function ConfidentialitePage() {
               Vos données personnelles sont utilisées exclusivement pour :
             </p>
             <ul>
-              <li>Traiter vos demandes d'intervention, de dépannage ou de devis</li>
+              <li>Traiter vos demandes d&apos;intervention, de dépannage ou de devis</li>
               <li>Vous contacter concernant nos services</li>
               <li>Gérer la facturation et le suivi de notre relation commerciale</li>
               <li>Améliorer la qualité de nos services</li>
@@ -48,12 +48,12 @@ export default function ConfidentialitePage() {
 
             <h2>3. Conservation des données</h2>
             <p>
-              Nous conservons vos données personnelles uniquement le temps nécessaire à l'accomplissement des finalités pour lesquelles elles ont été collectées, dans le respect de la législation en vigueur. Les données liées à la facturation sont conservées conformément aux obligations légales (10 ans).
+              Nous conservons vos données personnelles uniquement le temps nécessaire à l&apos;accomplissement des finalités pour lesquelles elles ont été collectées, dans le respect de la législation en vigueur. Les données liées à la facturation sont conservées conformément aux obligations légales (10 ans).
             </p>
 
             <h2>4. Partage des données</h2>
             <p>
-              DÉPANNAGE 49 s'engage à ne jamais vendre, louer ou céder vos données personnelles à des tiers à des fins commerciales. Vos données peuvent être partagées uniquement avec nos sous-traitants techniques (hébergement web) qui sont tenus à des obligations strictes de confidentialité.
+              DÉPANNAGE 49 s&apos;engage à ne jamais vendre, louer ou céder vos données personnelles à des tiers à des fins commerciales. Vos données peuvent être partagées uniquement avec nos sous-traitants techniques (hébergement web) qui sont tenus à des obligations strictes de confidentialité.
             </p>
 
             <h2>5. Sécurité</h2>
@@ -66,13 +66,13 @@ export default function ConfidentialitePage() {
               Conformément à la réglementation applicable (RGPD), vous disposez des droits suivants sur vos données personnelles :
             </p>
             <ul>
-              <li>Droit d'accès et de rectification</li>
-              <li>Droit à l'effacement (droit à l'oubli)</li>
+              <li>Droit d&apos;accès et de rectification</li>
+              <li>Droit à l&apos;effacement (droit à l&apos;oubli)</li>
               <li>Droit à la limitation du traitement</li>
-              <li>Droit d'opposition</li>
+              <li>Droit d&apos;opposition</li>
             </ul>
             <p>
-              Pour exercer ces droits, vous pouvez nous contacter par email à l'adresse suivante : <strong><a href="mailto:49depannage@gmail.com">49depannage@gmail.com</a></strong>.
+              Pour exercer ces droits, vous pouvez nous contacter par email à l&apos;adresse suivante : <strong><a href="mailto:49depannage@gmail.com">49depannage@gmail.com</a></strong>.
             </p>
 
             <h2>7. Cookies</h2>

@@ -12,7 +12,8 @@ export function QuoteModal() {
   const [origin, setOrigin] = useState("");
 
   useEffect(() => {
-    setOrigin(window.location.origin);
+    const initOrigin = () => setOrigin(window.location.origin);
+    initOrigin();
     const handleHashChange = () => {
       if (window.location.hash === "#devis") {
         setIsOpen(true);

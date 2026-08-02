@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { PhoneCall, Calendar } from "lucide-react";
-import Link from "next/link";
+
 
 export function ContactCTA() {
   return (
@@ -24,7 +24,7 @@ export function ContactCTA() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-5xl font-bold font-heading text-white mb-6">
-              Besoin d'une intervention rapide ?
+              Besoin d&apos;une intervention rapide ?
             </h2>
             <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed">
               Nos équipes sont prêtes à intervenir dans tout le <span className="whitespace-nowrap">Maine-et-Loire</span>. Demandez votre devis gratuit dès maintenant.

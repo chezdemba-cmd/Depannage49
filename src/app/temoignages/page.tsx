@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Star, Quote } from "lucide-react";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Avis Clients | DÉPANNAGE 49",
@@ -42,7 +41,7 @@ export default function TemoignagesPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6">La parole est à nos clients</h1>
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            La satisfaction de nos clients est notre plus belle récompense. Découvrez ce qu'ils pensent de nos interventions.
+            La satisfaction de nos clients est notre plus belle récompense. Découvrez ce qu&apos;ils pensent de nos interventions.
           </p>
           
           <div className="mt-10 inline-flex items-center gap-4 bg-white/10 backdrop-blur p-4 rounded-2xl border border-white/20">
@@ -69,7 +68,7 @@ export default function TemoignagesPage() {
                   ))}
                 </div>
                 <p className="text-slate-700 text-lg italic mb-8 relative z-10 leading-relaxed">
-                  "{avis.content}"
+                  &quot;{avis.content}&quot;
                 </p>
                 <div className="flex items-center gap-4 border-t border-slate-100 pt-6">
                   <div className="h-12 w-12 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold text-xl">

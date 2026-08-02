@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+
 import { Phone, ArrowRight } from "lucide-react";
 
 export function Hero() {
