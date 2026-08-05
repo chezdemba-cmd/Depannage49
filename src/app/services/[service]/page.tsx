@@ -20,6 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${service.title} - Intervention & Dépannage | DÉPANNAGE 49`,
     description: service.description,
+    openGraph: {
+      title: `${service.title} | DÉPANNAGE 49`,
+      description: service.description,
+      url: `https://depannage49.fr/services/${resolvedParams.service}`,
+    }
   };
 }
 

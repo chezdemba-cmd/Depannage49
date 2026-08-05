@@ -14,8 +14,27 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "DÉPANNAGE 49 | Votre partenaire technique dans le Maine-et-Loire",
+  metadataBase: new URL('https://depannage49.fr'),
+  title: {
+    default: "DÉPANNAGE 49 | Votre partenaire technique dans le Maine-et-Loire",
+    template: "%s | DÉPANNAGE 49"
+  },
   description: "Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Interventions rapides et professionnelles à Angers et dans tout le 49.",
+  keywords: ["dépannage", "plomberie", "électricité", "chauffage", "serrurerie", "vitrerie", "Angers", "Maine-et-Loire", "49", "urgence"],
+  authors: [{ name: "DÉPANNAGE 49" }],
+  openGraph: {
+    title: "DÉPANNAGE 49 | Votre partenaire technique dans le Maine-et-Loire",
+    description: "Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Interventions rapides et professionnelles à Angers et dans tout le 49.",
+    url: 'https://depannage49.fr',
+    siteName: 'Dépannage 49',
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "DÉPANNAGE 49 | Votre partenaire technique dans le Maine-et-Loire",
+    description: "Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Interventions rapides et professionnelles à Angers et dans tout le 49.",
+  },
 };
 
 import { Header } from "@/components/layout/Header";
