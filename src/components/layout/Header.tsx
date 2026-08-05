@@ -103,6 +103,16 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
+            <div className="flex items-center gap-3 mr-2">
+              <a href="https://www.facebook.com/profile.php?id=61592804099219" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors">
+                <span className="sr-only">Facebook</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@depannage49" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors">
+                <span className="sr-only">TikTok</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+              </a>
+            </div>
             <a 
               href="#devis"
               className={cn(buttonVariants(), "bg-primary hover:bg-primary/90 text-white font-medium")}
