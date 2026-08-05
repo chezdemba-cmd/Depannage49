@@ -6,10 +6,10 @@ import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DÉPANNAGE 49 | Expert Plombier, Électricien & Chauffagiste à Angers",
-  description: "Interventions d'urgence 7j/7 et travaux d'installation dans tout le Maine-et-Loire (49). Plomberie, électricité, chauffage, climatisation, serrurerie et vitrerie. Devis gratuit.",
+  title: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
+  description: "Dépannage 49, votre entreprise multiservices de maintenance technique dans le Maine-et-Loire (49). Interventions d'urgence 7j/7 et travaux d'installation (plomberie, électricité, etc.). Devis gratuit.",
   openGraph: {
-    title: "DÉPANNAGE 49 | Expert Plombier, Électricien & Chauffagiste à Angers",
+    title: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
     description: "Interventions d'urgence 7j/7 et travaux d'installation dans tout le Maine-et-Loire (49). Devis gratuit.",
     url: 'https://depannage49.fr',
   }

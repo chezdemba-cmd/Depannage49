@@ -11,6 +11,8 @@ export type ServiceData = {
   bg: string;
   image: string;
   imageSecondary: string;
+  seoTitle?: string;
+  seoDescription?: string;
 };
 
 export const servicesData: Record<string, ServiceData> = {
@@ -28,6 +30,8 @@ export const servicesData: Record<string, ServiceData> = {
     bg: "bg-blue-50",
     image: "/rea_plomberie.png",
     imageSecondary: "/service_plomberie_2.png",
+    seoTitle: "Plombier Angers & Dépannage Plomberie 49 | Recherche de fuite",
+    seoDescription: "Votre plombier à Angers et dans tout le Maine-et-Loire. Dépannage plomberie d'urgence, recherche de fuite, débouchage de canalisation et installation sanitaire.",
   },
   "electricite": {
     id: "electricite",
@@ -43,6 +47,8 @@ export const servicesData: Record<string, ServiceData> = {
     bg: "bg-yellow-50",
     image: "/rea_electricite.png",
     imageSecondary: "/service_electricite_2.png",
+    seoTitle: "Électricien Angers | Dépannage Électrique et Mise aux normes 49",
+    seoDescription: "Votre électricien à Angers et dans le 49. Dépannage électrique, mise aux normes, tableaux électriques, courant fort. Intervention rapide garantie.",
   },
   "chauffage": {
     id: "chauffage",
@@ -58,6 +64,8 @@ export const servicesData: Record<string, ServiceData> = {
     bg: "bg-red-50",
     image: "/service_chauffage.png",
     imageSecondary: "/service_chauffage_2.png",
+    seoTitle: "Chauffagiste Angers | Dépannage & Maintenance Chauffage 49",
+    seoDescription: "Chauffagiste expert à Angers. Installation, entretien et dépannage de chauffage, chaudières et radiateurs. Interventions rapides dans le Maine-et-Loire.",
   },
   "climatisation": {
     id: "climatisation",
@@ -73,6 +81,8 @@ export const servicesData: Record<string, ServiceData> = {
     bg: "bg-cyan-50",
     image: "/rea_clim.png",
     imageSecondary: "/service_clim_2.png",
+    seoTitle: "Installation & Entretien Climatisation Angers | Climatisation réversible",
+    seoDescription: "Installation, entretien et dépannage de systèmes de climatisation réversible à Angers et alentours. Optimisez votre confort thermique.",
   },
   "serrurerie": {
     id: "serrurerie",
@@ -88,6 +98,8 @@ export const servicesData: Record<string, ServiceData> = {
     bg: "bg-slate-50",
     image: "/rea_serrurerie.png",
     imageSecondary: "/service_serrurerie_2.png",
+    seoTitle: "Serrurier Angers | Dépannage urgence & Ouverture de porte 49",
+    seoDescription: "Serrurier qualifié à Angers. Ouverture de porte, remplacement de serrure, blindage. Dépannage d'urgence rapide et sécurisé dans le 49.",
   },
   "vitrerie": {
     id: "vitrerie",
@@ -103,6 +115,8 @@ export const servicesData: Record<string, ServiceData> = {
     bg: "bg-indigo-50",
     image: "/service_vitrerie.png",
     imageSecondary: "/service_vitrerie_2.png",
+    seoTitle: "Vitrier Angers | Réparation de fenêtres et Remplacement vitrage",
+    seoDescription: "Vitrier à Angers pour le remplacement de vitrage, vitrines et fenêtres. Réparation d'ouvrants et double vitrage dans le Maine-et-Loire.",
   },
   "eclairage": {
     id: "eclairage",
@@ -118,6 +132,8 @@ export const servicesData: Record<string, ServiceData> = {
     bg: "bg-amber-50",
     image: "/service_eclairage_public.png",
     imageSecondary: "/service_eclairage_public_2.png",
+    seoTitle: "Éclairage Public & Maintenance Éclairage | Dépannage Angers 49",
+    seoDescription: "Installation et maintenance d'éclairage public, extérieur et LED. Réseaux aériens et souterrains pour collectivités et particuliers dans le 49.",
   }
 };
 

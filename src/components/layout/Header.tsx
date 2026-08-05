@@ -45,7 +45,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/logo.png"
-              alt="DÉPANNAGE 49"
+              alt="Logo Dépannage 49 - Entreprise multiservices Angers"
               width={180}
               height={50}
               className="h-10 w-auto object-contain"
@@ -93,6 +93,12 @@ export function Header() {
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               Réalisations
+            </Link>
+            <Link
+              href="/actualites"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Conseils & Actualités
             </Link>
             <Link
               href="/contact"
@@ -153,7 +159,7 @@ export function Header() {
               <div className="flex items-center justify-between p-4 border-b">
                 <Image
                   src="/logo.png"
-                  alt="DÉPANNAGE 49"
+                  alt="Logo Dépannage 49 - Entreprise multiservices Angers"
                   width={150}
                   height={40}
                   className="h-8 w-auto object-contain"
@@ -229,6 +235,13 @@ export function Header() {
                     className="text-lg font-medium"
                   >
                     Réalisations
+                  </Link>
+                  <Link
+                    href="/actualites"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-lg font-medium"
+                  >
+                    Conseils & Actualités
                   </Link>
                   <Link
                     href="/contact"

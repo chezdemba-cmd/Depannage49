@@ -6,12 +6,12 @@ export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground pt-16 pb-8 border-t border-primary/20">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
             <Image
               src="/logo.png"
-              alt="DÉPANNAGE 49"
+              alt="Logo Dépannage 49 - Entreprise multiservices Angers"
               width={180}
               height={50}
               className="h-12 w-auto bg-white p-2 rounded-md object-contain"
@@ -61,6 +61,11 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/actualites" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">
+                  Conseils & Actualités
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -98,6 +103,20 @@ export function Footer() {
                   Éclairage Public
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Villes */}
+          <div>
+            <h3 className="text-lg font-heading font-semibold mb-6">Zones d'intervention</h3>
+            <ul className="space-y-3">
+              <li><Link href="/villes/angers" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">Angers</Link></li>
+              <li><Link href="/villes/cholet" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">Cholet</Link></li>
+              <li><Link href="/villes/saumur" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">Saumur</Link></li>
+              <li><Link href="/villes/avrille" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">Avrillé</Link></li>
+              <li><Link href="/villes/trelaze" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">Trélazé</Link></li>
+              <li><Link href="/villes/les-ponts-de-ce" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">Les Ponts-de-Cé</Link></li>
+              <li><Link href="/villes/beaucouze" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">Beaucouzé</Link></li>
             </ul>
           </div>
 

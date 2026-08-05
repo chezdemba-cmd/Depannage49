@@ -41,13 +41,15 @@ export function Features() {
               className="relative"
             >
               <div className="absolute inset-0 bg-secondary/10 transform -skew-y-6 rounded-3xl -z-10"></div>
-              <Image 
-                src="/features_image.jpg" 
-                alt="Pourquoi choisir Dépannage 49" 
-                width={800} 
-                height={1000} 
-                className="w-full aspect-[4/5] rounded-3xl shadow-2xl object-cover border-4 border-white relative z-10"
-              />
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] group">
+                <Image 
+                  src="/features_image.jpg" 
+                  alt="Artisan entreprise multiservices de maintenance à Angers" 
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-60"></div>
+              </div>
             </motion.div>
           </div>
 

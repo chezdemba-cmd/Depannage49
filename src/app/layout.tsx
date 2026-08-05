@@ -16,15 +16,15 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL('https://depannage49.fr'),
   title: {
-    default: "DÉPANNAGE 49 | Votre partenaire technique dans le Maine-et-Loire",
+    default: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
     template: "%s | DÉPANNAGE 49"
   },
-  description: "Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Interventions rapides et professionnelles à Angers et dans tout le 49.",
-  keywords: ["dépannage", "plomberie", "électricité", "chauffage", "serrurerie", "vitrerie", "Angers", "Maine-et-Loire", "49", "urgence"],
+  description: "Dépannage 49, votre entreprise multiservices de maintenance technique dans le Maine-et-Loire (49). Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Dépannage d'urgence à Angers et alentours.",
+  keywords: ["dépannage Angers", "dépannage 49", "maintenance technique Angers", "entreprise multiservices Angers", "plombier Angers", "électricien Angers", "chauffagiste Angers", "serrurier Angers", "Maine-et-Loire"],
   authors: [{ name: "DÉPANNAGE 49" }],
   openGraph: {
-    title: "DÉPANNAGE 49 | Votre partenaire technique dans le Maine-et-Loire",
-    description: "Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Interventions rapides et professionnelles à Angers et dans tout le 49.",
+    title: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
+    description: "Dépannage 49, votre entreprise multiservices de maintenance technique dans le Maine-et-Loire (49). Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Dépannage d'urgence à Angers et alentours.",
     url: 'https://depannage49.fr',
     siteName: 'Dépannage 49',
     locale: 'fr_FR',
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "DÉPANNAGE 49 | Votre partenaire technique dans le Maine-et-Loire",
-    description: "Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Interventions rapides et professionnelles à Angers et dans tout le 49.",
+    title: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
+    description: "Dépannage 49, votre entreprise multiservices de maintenance technique dans le Maine-et-Loire (49). Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Dépannage d'urgence à Angers et alentours.",
   },
 };
 

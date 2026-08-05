@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${service.title} - Intervention & Dépannage | DÉPANNAGE 49`,
-    description: service.description,
+    title: service.seoTitle || `${service.title} - Intervention & Dépannage | DÉPANNAGE 49`,
+    description: service.seoDescription || service.description,
     openGraph: {
-      title: `${service.title} | DÉPANNAGE 49`,
-      description: service.description,
+      title: service.seoTitle || `${service.title} | DÉPANNAGE 49`,
+      description: service.seoDescription || service.description,
       url: `https://depannage49.fr/services/${resolvedParams.service}`,
     }
   };
