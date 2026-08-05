@@ -63,9 +63,9 @@ const services = [
     bg: "bg-indigo-50",
   },
   {
-    title: "Éclairage",
+    title: "Éclairage Public",
     icon: Lightbulb,
-    description: "Éclairage domestique, public, LED et relamping.",
+    description: "Réseaux d'éclairage public, travaux et dépannage aérien et souterrain.",
     href: "/services/eclairage",
     color: "text-amber-500",
     bg: "bg-amber-50",

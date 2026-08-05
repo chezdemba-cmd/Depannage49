@@ -106,14 +106,14 @@ export const servicesData: Record<string, ServiceData> = {
   },
   "eclairage": {
     id: "eclairage",
-    title: "Éclairage",
+    title: "Éclairage Public",
     icon: Lightbulb,
-    description: "Éclairage domestique, public, LED et relamping.",
+    description: "Réseaux d'éclairage public, travaux et dépannage aérien et souterrain.",
     content: [
-      "Mettez en lumière vos espaces extérieurs et intérieurs.",
-      "Nous proposons des solutions d'éclairage performantes, économiques et esthétiques pour les collectivités, les entreprises et les particuliers."
+      "Spécialistes des réseaux d'éclairage public, nous assurons l'installation, la maintenance et le dépannage de vos infrastructures.",
+      "Nos équipes interviennent sur les réseaux de distribution aériens et souterrains pour garantir la sécurité et la continuité de service de vos installations, que ce soit pour les collectivités ou le domaine privé."
     ],
-    features: ["Éclairage public", "Éclairage domestique", "LED", "Maintenance"],
+    features: ["Réseaux d'éclairage public", "Travaux aériens", "Travaux souterrains", "Dépannage réseau", "Maintenance LED"],
     color: "text-amber-500",
     bg: "bg-amber-50",
     image: "/service_eclairage.png",

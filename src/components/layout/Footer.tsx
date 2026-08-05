@@ -93,6 +93,11 @@ export function Footer() {
                   Vitrerie
                 </Link>
               </li>
+              <li>
+                <Link href="/services/eclairage" className="text-primary-foreground/80 hover:text-secondary hover:pl-2 transition-all">
+                  Éclairage Public
+                </Link>
+              </li>
             </ul>
           </div>
 

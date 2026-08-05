@@ -15,7 +15,7 @@ const services = [
   { name: "Climatisation", href: "/services/climatisation" },
   { name: "Serrurerie", href: "/services/serrurerie" },
   { name: "Vitrerie", href: "/services/vitrerie" },
-  { name: "Éclairage", href: "/services/eclairage" },
+  { name: "Éclairage Public", href: "/services/eclairage" },
 ];
 
 export function Header() {
