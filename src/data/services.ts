@@ -116,8 +116,8 @@ export const servicesData: Record<string, ServiceData> = {
     features: ["Réseaux d'éclairage public", "Travaux aériens", "Travaux souterrains", "Dépannage réseau", "Maintenance LED"],
     color: "text-amber-500",
     bg: "bg-amber-50",
-    image: "/service_eclairage.png",
-    imageSecondary: "/service_eclairage_new.png",
+    image: "/service_eclairage_public.png",
+    imageSecondary: "/service_eclairage_public_2.png",
   }
 };
 
