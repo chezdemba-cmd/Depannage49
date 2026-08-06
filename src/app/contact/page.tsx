@@ -77,10 +77,10 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Google Maps Embed (Placeholder URL, should be replaced with real embed URL) */}
+              {/* Google Maps Embed */}
               <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 h-[400px]">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86082.90263625732!2d-0.6274415444122115!3d47.4704516584288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878e1b6f63be3%3A0x40d37521e089d70!2sAngers!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+                  src="https://maps.google.com/maps?q=Angers,France&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
