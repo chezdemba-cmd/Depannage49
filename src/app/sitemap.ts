@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Remplacez cette URL par votre vrai nom de domaine une fois en ligne
-  const baseUrl = 'https://depannage49.fr';
+  const baseUrl = 'https://depannage49.com';
 
   return [
     {

@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://depannage49.fr'),
+  metadataBase: new URL('https://depannage49.com'),
   title: {
     default: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
     template: "%s | DÉPANNAGE 49"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
     description: "Dépannage 49, votre entreprise multiservices de maintenance technique dans le Maine-et-Loire (49). Plomberie, électricité, chauffage, climatisation, serrurerie, vitrerie. Dépannage d'urgence à Angers et alentours.",
-    url: 'https://depannage49.fr',
+    url: 'https://depannage49.com',
     siteName: 'Dépannage 49',
     locale: 'fr_FR',
     type: 'website',

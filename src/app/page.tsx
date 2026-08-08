@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DÉPANNAGE 49 | Entreprise multiservices de maintenance technique à Angers",
     description: "Interventions d'urgence 7j/7 et travaux d'installation dans tout le Maine-et-Loire (49). Devis gratuit.",
-    url: 'https://depannage49.fr',
+    url: 'https://depannage49.com',
   }
 };
 

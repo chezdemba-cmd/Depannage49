@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Conseils & Actualités | DÉPANNAGE 49 Angers",
     description: "Découvrez tous nos conseils et actualités sur la plomberie, l'électricité, le chauffage et la sécurité.",
-    url: 'https://depannage49.fr/actualites',
+    url: 'https://depannage49.com/actualites',
   }
 };
 

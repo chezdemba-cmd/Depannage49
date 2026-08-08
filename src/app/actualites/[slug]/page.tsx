@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: article.seoTitle,
       description: article.seoDescription,
-      url: `https://depannage49.fr/actualites/${resolvedParams.slug}`,
-      ...(article.imageUrl ? { images: [{ url: `https://depannage49.fr${article.imageUrl}` }] } : {})
+      url: `https://depannage49.com/actualites/${resolvedParams.slug}`,
+      ...(article.imageUrl ? { images: [{ url: `https://depannage49.com${article.imageUrl}` }] } : {})
     }
   };
 }

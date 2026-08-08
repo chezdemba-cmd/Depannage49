@@ -131,7 +131,7 @@ async function generateArticle() {
     console.log("Fichier src/data/actualites.ts mis à jour avec succès ! L'article est maintenant publié sur le site.");
 
     // --- PARTAGE VIA MAKE.COM (WEBHOOK) ---
-    const articleUrl = `https://depannage49.fr/actualites/${slug}`;
+    const articleUrl = `https://depannage49.com/actualites/${slug}`;
     const message = `✨ Nouvel article ! ✨\n\n${newArticle.title}\n\n${newArticle.description}\n\n👉 Lisez tous nos conseils ici : ${articleUrl}`;
     
     const payload = {

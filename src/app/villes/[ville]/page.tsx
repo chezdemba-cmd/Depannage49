@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: ville.seoTitle,
       description: ville.seoDescription,
-      url: `https://depannage49.fr/villes/${resolvedParams.ville}`,
+      url: `https://depannage49.com/villes/${resolvedParams.ville}`,
     }
   };
 }
