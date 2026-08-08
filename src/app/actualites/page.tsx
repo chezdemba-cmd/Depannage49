@@ -29,11 +29,11 @@ export default function ActualitesPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-4xl mx-auto space-y-12">
             {articles.map((article) => (
-              <div key={article.slug} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+              <div key={article.slug} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col md:flex-row group hover:shadow-md transition-shadow">
                 {article.imageUrl && (
-                  <div className="w-full h-48 overflow-hidden relative">
+                  <div className="w-full md:w-2/5 h-64 md:h-auto overflow-hidden relative shrink-0">
                     <img 
                       src={article.imageUrl} 
                       alt={article.title}
@@ -41,7 +41,7 @@ export default function ActualitesPage() {
                     />
                   </div>
                 )}
-                <div className="p-8 flex flex-col h-full">
+                <div className="p-8 flex flex-col justify-center w-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-semibold">
                       {article.category}
@@ -51,17 +51,17 @@ export default function ActualitesPage() {
                       {new Date(article.date).toLocaleDateString('fr-FR')}
                     </div>
                   </div>
-                  <h2 className="text-xl font-bold font-heading text-slate-800 mb-4 group-hover:text-secondary transition-colors">
+                  <h2 className="text-2xl font-bold font-heading text-slate-800 mb-4 group-hover:text-secondary transition-colors">
                     {article.title}
                   </h2>
-                  <p className="text-slate-600 mb-8 flex-1">
+                  <p className="text-slate-600 mb-8 text-lg">
                     {article.description}
                   </p>
                   <Link 
                     href={`/actualites/${article.slug}`}
                     className="inline-flex items-center text-secondary font-medium hover:text-secondary/80 mt-auto"
                   >
-                    Lire l'article
+                    Lire l'article complet
                     <ChevronRight className="w-4 h-4 ml-1" />
                   </Link>
                 </div>
