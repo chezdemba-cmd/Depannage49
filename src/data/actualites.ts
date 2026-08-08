@@ -216,6 +216,60 @@ export const actualitesData: Record<string, ActualiteData> = {
       "seoTitle": "Fuites d'Eau Souterraines : Conseils à Angers | Dépannage 49",
       "seoDescription": "Apprenez à détecter et prévenir les fuites d'eau souterraines dans votre maison à Angers avec Dépannage 49. Evitez les dégâts matériels !",
       "imageUrl": ""
+  },
+  "comment-choisir-le-vitrage-adapte-a-votre-habitat-": {
+      "slug": "comment-choisir-le-vitrage-adapte-a-votre-habitat-",
+      "title": "Comment choisir le vitrage adapté à votre habitat ?",
+      "description": "Le choix du vitrage est crucial pour le confort et la performance énergétique de votre habitat. Découvrez les différents types de vitrages et leurs avantages.",
+      "date": "2026-08-08",
+      "category": "Vitrerie",
+      "content": [
+          "Lorsque l'on envisage de remplacer des fenêtres ou des portes en verre, le choix du vitrage est primordial. En effet, il joue un rôle important dans l'isolation thermique, phonique, et même la sécurité de votre domicile.",
+          "Il existe plusieurs types de vitrage : simple, double et triple. Le vitrage simple est de moins en moins utilisé, tandis que le double vitrage reste le standard le plus courant. Le triple vitrage, bien que plus coûteux, offre une performance isolante optimale pour les habitations situées dans des régions très froides.",
+          "Le vitrage à contrôle solaire est une excellente option pour limiter la chaleur à l'intérieur en été. Ce type de vitrage est traité pour réfléchir les rayons du soleil, ce qui permet de maintenir une température agréable sans consommer d'énergie supplémentaire pour la climatisation.",
+          "Pour les maisons situées près de zones bruyantes, opter pour un vitrage acoustique peut faire la différence. Ce vitrage est conçu avec des couches spécifiques pour réduire le bruit extérieur, améliorant ainsi votre confort quotidien.",
+          "Enfin, pour garantir la sécurité des occupants, il est possible d'installer du vitrage sécurisé, tel que le verre feuilleté ou le verre trempé. Ce type de vitrage résiste mieux aux chocs et réduit les risques de blessures en cas de casse.",
+          "En conséquence, choisir le bon vitrage nécessite de considérer divers facteurs tels que l'emplacement de votre habitation, votre budget et vos besoins spécifiques en matière de confort et de sécurité."
+      ],
+      "seoTitle": "Vitrage : Choisir le meilleur pour votre habitat à Angers",
+      "seoDescription": "Découvrez comment choisir le vitrage adapté à votre habitat à Angers avec nos conseils d'experts en vitrerie chez Dépannage 49.",
+      "imageUrl": ""
+  },
+  "les-5-signes-annonciateurs-dune-panne-de-chaudiere-a-surveiller": {
+      "slug": "les-5-signes-annonciateurs-dune-panne-de-chaudiere-a-surveiller",
+      "title": "Les 5 signes annonciateurs d'une panne de chaudière à surveiller",
+      "description": "Apprenez à identifier les signes précurseurs d'une panne de chaudière. Un entretien préventif peut vous éviter des désagréments coûteux.",
+      "date": "2026-08-08",
+      "category": "Chauffage & Clim",
+      "content": [
+          "Une chaudière est un élément essentiel de votre confort domestique. Toutefois, des signes indiquant une panne imminente peuvent facilement passer inaperçus.",
+          "Le premier signe à surveiller est un bruit inhabituel. Des cliquetis, des sifflements ou des grondements peuvent être le signe de pièces usées ou de dépôts dans le système.",
+          "Un autre indicateur est la température de l'eau. Si vous remarquez une variation importante ou si l'eau met plus de temps à chauffer, un entretien s'impose.",
+          "La présence de fuites d'eau ou de condensation autour de la chaudière est également préoccupante. Cela pourrait désigner un joint défectueux ou un problème plus sérieux.",
+          "Vous devez aussi être attentif à la pression de votre chaudière. Une pression anormale peut affecter son fonctionnement et conduire à une panne.",
+          "Enfin, un rendement de chauffage en baisse indique que votre chaudière pourrait avoir besoin d'une bonne révision. Ne tardez pas à faire appel à des experts pour éviter des réparations coûteuses."
+      ],
+      "seoTitle": "Signes de panne de chaudière à Angers | Dépannage 49",
+      "seoDescription": "Découvrez les signes de panne de chaudière à Angers et comment y remédier pour un confort optimal avec Dépannage 49.",
+      "imageUrl": ""
+  },
+  "les-secrets-pour-optimiser-la-duree-de-vie-de-votre-chaudiere": {
+      "slug": "les-secrets-pour-optimiser-la-duree-de-vie-de-votre-chaudiere",
+      "title": "Les Secrets pour Optimiser la Durée de Vie de Votre Chaudière",
+      "description": "Découvrez comment optimiser la durée de vie de votre chaudière grâce à des conseils pratiques et efficaces. Évitez les pannes et réduisez vos factures de chauffage !",
+      "date": "2026-08-08",
+      "category": "Chauffage & Clim",
+      "content": [
+          "Pour assurer le bon fonctionnement de votre chaudière, un entretien régulier est essentiel. Vérifiez la pression, régulièrement le filtre et nettoyez les conduits pour retenir l'efficacité du système.",
+          "Il est essentiel de purger les radiateurs de votre système de chauffage au moins une fois par an. Cela permet d'éliminer les bulles d'air qui peuvent entraver la circulation de l'eau chaude et réduire l'efficacité de votre chauffage.",
+          "Utilisez un thermostat programmable pour réguler la température de votre maison. Cela permet non seulement de renforcer votre confort, mais également de diminuer votre consommation d'énergie et prolonger la vie de votre chaudière.",
+          "Faites appel à des professionnels pour une vérification annuelle. Des techniciens expérimentés de 'Dépannage 49' peuvent détecter les potentielles défaillances et effectuer des réparations nécessaires avant qu'elles ne deviennent des problèmes majeurs.",
+          "En hiver, évitez de baisser trop la température lorsque vous quittez votre domicile. Une chute drastique peut engendrer une surconsommation d’énergie lorsque vous chauffez à nouveau, mettant ainsi à mal votre chaudière.",
+          "Enfin, isolez correctement votre maison. Une bonne isolation réduit la charge sur votre système de chauffage et augmente son efficacité, ce qui permet à votre chaudière de durer plus longtemps."
+      ],
+      "seoTitle": "Optimiser Chaudière Angers | Dépannage 49",
+      "seoDescription": "Apprenez à prolonger la vie de votre chaudière avec nos conseils pratiques pour un chauffage efficace à Angers et ses environs.",
+      "imageUrl": "/images/actualites/les-secrets-pour-optimiser-la-duree-de-vie-de-votre-chaudiere.png"
   }
 };
 

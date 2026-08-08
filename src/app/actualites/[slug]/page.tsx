@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { Calendar, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: article.seoTitle,
       description: article.seoDescription,
       url: `https://depannage49.fr/actualites/${resolvedParams.slug}`,
+      ...(article.imageUrl ? { images: [{ url: `https://depannage49.fr${article.imageUrl}` }] } : {})
     }
   };
 }
@@ -62,6 +64,18 @@ export default async function ActualiteDetailPage({ params }: Props) {
           </div>
         </div>
       </div>
+
+      {article.imageUrl && (
+        <div className="w-full h-[400px] md:h-[500px] relative">
+          <Image 
+            src={article.imageUrl}
+            alt={article.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
 
       <article className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">

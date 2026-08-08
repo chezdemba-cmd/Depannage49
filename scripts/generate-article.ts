@@ -75,14 +75,19 @@ async function generateArticle() {
     // 2. Générer l'image
     let imageUrl = "";
     try {
-      const imageResponse = await openai.images.generate({
-        model: "dall-e-3",
-        prompt: `A professional, highly realistic, high-quality photograph illustrating the following blog article title: "${articleData.title}". The image should be suitable for a professional local maintenance and repair business blog in France. Natural lighting, no text in the image.`,
-        n: 1,
-        size: "1024x1024",
-      });
-      imageUrl = imageResponse.data[0].url || "";
-      console.log("Image générée avec succès !");
+      const prompt = encodeURIComponent(`A professional, highly realistic photograph illustrating: ${articleData.title}. Maintenance and repair business context. No text in the image.`);
+      const tempUrl = `https://image.pollinations.ai/prompt/${prompt}?width=1024&height=1024&nologo=true`;
+      
+      console.log("Téléchargement de l'image...");
+      const imgResponse = await fetch(tempUrl);
+      if (!imgResponse.ok) throw new Error("Erreur de téléchargement");
+      const imgBuffer = await imgResponse.arrayBuffer();
+      
+      const localPath = `/images/actualites/${slug}.png`;
+      const absolutePath = path.join(process.cwd(), 'public', 'images', 'actualites', `${slug}.png`);
+      await fs.writeFile(absolutePath, Buffer.from(imgBuffer));
+      imageUrl = localPath;
+      console.log("Image générée et sauvegardée localement avec succès !");
     } catch (imgError) {
       console.error("Erreur lors de la génération de l'image :", imgError);
       // On continue même sans image
