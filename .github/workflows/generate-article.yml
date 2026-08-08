@@ -32,6 +32,14 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add src/data/actualites.ts
+          git add src/data/actualites.ts public/images/actualites/
           git commit -m "chore: ajout d'un article automatique" || echo "Pas de changement à commiter"
           git push origin main
+
+      - name: Wait for Vercel deployment
+        run: sleep 60
+
+      - name: Trigger Webhook
+        run: npx tsx scripts/trigger-make.ts
+        env:
+          MAKE_WEBHOOK_URL: ${{ secrets.MAKE_WEBHOOK_URL }}

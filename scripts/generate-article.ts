@@ -131,32 +131,18 @@ async function generateArticle() {
     console.log("Fichier src/data/actualites.ts mis à jour avec succès ! L'article est maintenant publié sur le site.");
 
     // --- PARTAGE VIA MAKE.COM (WEBHOOK) ---
-    if (process.env.MAKE_WEBHOOK_URL && process.env.MAKE_WEBHOOK_URL.startsWith('http')) {
-      console.log("Envoi des informations à Make.com pour la publication Facebook...");
-      const articleUrl = `https://depannage49.fr/actualites/${slug}`;
-      const message = `✨ Nouvel article ! ✨\n\n${newArticle.title}\n\n${newArticle.description}\n\n👉 Lisez tous nos conseils ici : ${articleUrl}`;
-      
-      const makeResponse = await fetch(process.env.MAKE_WEBHOOK_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          title: newArticle.title,
-          message: message,
-          url: articleUrl,
-          imageUrl: newArticle.imageUrl
-        }),
-      });
-
-      if (makeResponse.ok) {
-        console.log("Les données ont été envoyées à Make.com avec succès ! Le scénario va prendre le relais.");
-      } else {
-        console.error("Erreur lors de l'envoi à Make.com :", await makeResponse.text());
-      }
-    } else {
-      console.log("Publication externe ignorée : MAKE_WEBHOOK_URL n'est pas configuré.");
-    }
+    const articleUrl = `https://depannage49.fr/actualites/${slug}`;
+    const message = `✨ Nouvel article ! ✨\n\n${newArticle.title}\n\n${newArticle.description}\n\n👉 Lisez tous nos conseils ici : ${articleUrl}`;
+    
+    const payload = {
+      title: newArticle.title,
+      message: message,
+      url: articleUrl,
+      imageUrl: newArticle.imageUrl
+    };
+    
+    await fs.writeFile(path.join(process.cwd(), 'latest_article.json'), JSON.stringify(payload, null, 2));
+    console.log("Fichier latest_article.json créé. Le webhook sera déclenché après le déploiement.");
 
   } catch (error) {
     console.error("Erreur lors de la génération de l'article :", error);
