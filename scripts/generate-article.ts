@@ -33,6 +33,11 @@ async function generateArticle() {
   console.log(`Génération d'un article pour la catégorie : ${category}...`);
 
   try {
+    // 1. Lire l'historique pour garantir l'unicité
+    const actualitesPath = path.join(process.cwd(), 'src', 'data', 'actualites.ts');
+    let actualitesFile = await fs.readFile(actualitesPath, 'utf8');
+    const existingTitles = [...actualitesFile.matchAll(/title:\s*"([^"]+)"/g)].map(m => m[1]);
+    
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
@@ -40,6 +45,10 @@ async function generateArticle() {
           role: "system",
           content: `Tu es un expert en maintenance de bâtiment (plombier, électricien, chauffagiste, vitrier, serrurier) travaillant pour l'entreprise "Dépannage 49" située à Angers et ses alentours.
           Tu dois rédiger un article de blog/conseil de haute qualité, clair, instructif et professionnel pour la catégorie "${category}".
+          
+          RÈGLE ABSOLUE D'UNICITÉ : Voici les titres des articles DÉJÀ publiés sur le site : [${existingTitles.join(' | ')}].
+          Tu dois OBLIGATOIREMENT choisir un sujet 100% INÉDIT qui ne répète pas ces thèmes. Trouve un nouvel angle, un nouveau problème courant ou un nouveau conseil.
+          
           L'article doit être divisé en paragraphes clairs.
           Génère le résultat au format JSON avec les clés suivantes :
           - title (titre accrocheur et utile pour le lecteur)
@@ -60,6 +69,25 @@ async function generateArticle() {
     const slug = slugify(articleData.title);
     const date = new Date().toISOString().split('T')[0]; // Date du jour (YYYY-MM-DD)
 
+    console.log(`Texte généré avec succès : "${articleData.title}"`);
+    console.log("Génération de l'image d'illustration en cours (DALL-E 3)...");
+
+    // 2. Générer l'image
+    let imageUrl = "";
+    try {
+      const imageResponse = await openai.images.generate({
+        model: "dall-e-3",
+        prompt: `A professional, highly realistic, high-quality photograph illustrating the following blog article title: "${articleData.title}". The image should be suitable for a professional local maintenance and repair business blog in France. Natural lighting, no text in the image.`,
+        n: 1,
+        size: "1024x1024",
+      });
+      imageUrl = imageResponse.data[0].url || "";
+      console.log("Image générée avec succès !");
+    } catch (imgError) {
+      console.error("Erreur lors de la génération de l'image :", imgError);
+      // On continue même sans image
+    }
+
     const newArticle = {
       slug,
       title: articleData.title,
@@ -69,6 +97,7 @@ async function generateArticle() {
       content: articleData.content,
       seoTitle: articleData.seoTitle,
       seoDescription: articleData.seoDescription,
+      imageUrl,
     };
 
     console.log(`Article généré avec succès : "${newArticle.title}"`);
@@ -96,6 +125,38 @@ async function generateArticle() {
     await fs.writeFile(actualitesPath, newContent, 'utf8');
     
     console.log("Fichier src/data/actualites.ts mis à jour avec succès ! L'article est maintenant publié sur le site.");
+
+    // --- PARTAGE FACEBOOK ---
+    if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_ACCESS_TOKEN && process.env.FACEBOOK_PAGE_ID !== 'votre_page_id' && process.env.FACEBOOK_ACCESS_TOKEN !== 'votre_token') {
+      console.log("Publication sur Facebook en cours...");
+      const pageId = process.env.FACEBOOK_PAGE_ID;
+      const accessToken = process.env.FACEBOOK_ACCESS_TOKEN;
+      
+      // On génère l'URL de l'article (à adapter si votre vrai nom de domaine est différent)
+      const articleUrl = `https://depannage49.fr/actualites/${slug}`;
+      const message = `✨ Nouvel article ! ✨\n\n${newArticle.title}\n\n${newArticle.description}\n\n👉 Lisez tous nos conseils ici : ${articleUrl}`;
+      
+      const fbResponse = await fetch(`https://graph.facebook.com/v19.0/${pageId}/feed`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: message,
+          link: articleUrl,
+          access_token: accessToken,
+        }),
+      });
+
+      const fbData = await fbResponse.json();
+      if (fbResponse.ok) {
+        console.log(`Article publié avec succès sur Facebook ! (ID de la publication: ${fbData.id})`);
+      } else {
+        console.error("Erreur lors de la publication sur Facebook :", fbData);
+      }
+    } else {
+      console.log("Publication Facebook ignorée : Les clés FACEBOOK_PAGE_ID et FACEBOOK_ACCESS_TOKEN ne sont pas configurées.");
+    }
 
   } catch (error) {
     console.error("Erreur lors de la génération de l'article :", error);

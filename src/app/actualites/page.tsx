@@ -32,6 +32,15 @@ export default function ActualitesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => (
               <div key={article.slug} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col group hover:shadow-md transition-shadow">
+                {article.imageUrl && (
+                  <div className="w-full h-48 overflow-hidden relative">
+                    <img 
+                      src={article.imageUrl} 
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 <div className="p-8 flex flex-col h-full">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-semibold">

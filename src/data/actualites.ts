@@ -7,6 +7,7 @@ export type ActualiteData = {
   content: string[];
   seoTitle: string;
   seoDescription: string;
+  imageUrl?: string;
 };
 
 export const actualitesData: Record<string, ActualiteData> = {
