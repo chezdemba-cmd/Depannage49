@@ -57,6 +57,22 @@ export const actualitesData: Record<string, ActualiteData> = {
     ],
     seoTitle: "Entretien Climatisation Angers : Les Bons Gestes | Dépannage 49",
     seoDescription: "Comment bien entretenir sa climatisation ? Nettoyage des filtres, vérification. Dépannage 49, votre expert clim à Angers.",
+  },
+  "securisez-votre-installation-electrique-conseils-essentiels": {
+      "slug": "securisez-votre-installation-electrique-conseils-essentiels",
+      "title": "Sécurisez votre Installation Électrique : Conseils Essentiels",
+      "description": "Découvrez comment protéger votre installation électrique à Angers avec nos conseils pratiques. Apprenez à prévenir les pannes et à garantir la sécurité de votre foyer.",
+      "date": "2026-08-08",
+      "category": "Électricité",
+      "content": [
+          "L'électricité est un élément essentiel de notre quotidien. Que ce soit pour éclairer votre maison, faire fonctionner vos appareils électroménagers ou alimenter vos équipements technologiques, il est crucial d'avoir une installation électrique sûre et bien entretenue.",
+          "La première étape pour assurer la sécurité de votre installation électrique est de vérifier régulièrement vos câbles et prises. Des signes de vieillissement, comme des fissures, des brûlures ou des décolorations, peuvent indiquer un danger imminent.",
+          "Il est également important d'installer des dispositifs de protection, tels que des disjoncteurs différentiels. Ces appareils sont conçus pour couper l'électricité en cas de fuite, protégeant ainsi votre maison des risques d'électrocution et d'incendie.",
+          "Ne négligez pas non plus l'importance d'un éclairage extérieur adéquat. Cela contribue non seulement à la sécurité de votre propriété, mais également à dissuader les intrus. Pensez à installer des détecteurs de mouvement pour plus de praticité et de sécurité.",
+          "Enfin, en cas de doute sur l'état de votre installation électrique, n'hésitez pas à faire appel à un professionnel qualifié comme Dépannage 49 à Angers. Nous vous aiderons à effectuer un diagnostic complet et à réaliser les réparations nécessaires."
+      ],
+      "seoTitle": "Sécurité Électrique à Angers | Dépannage 49",
+      "seoDescription": "Assurez la sécurité de votre installation électrique à Angers avec nos conseils pratiques et l'expertise de Dépannage 49."
   }
 };
 

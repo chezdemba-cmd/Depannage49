@@ -1,0 +1,36 @@
+name: Generate Auto Article
+
+on:
+  schedule:
+    - cron: '0 8 */2 * *' # Tous les 2 jours à 08:00 UTC
+  workflow_dispatch: # Permet de lancer le script manuellement depuis GitHub
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run article generation script
+        run: npx tsx scripts/generate-article.ts
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add src/data/actualites.ts
+          git commit -m "chore: ajout d'un article automatique" || echo "Pas de changement à commiter"
+          git push origin main
