@@ -270,6 +270,24 @@ export const actualitesData: Record<string, ActualiteData> = {
       "seoTitle": "Optimiser Chaudière Angers | Dépannage 49",
       "seoDescription": "Apprenez à prolonger la vie de votre chaudière avec nos conseils pratiques pour un chauffage efficace à Angers et ses environs.",
       "imageUrl": "/images/actualites/les-secrets-pour-optimiser-la-duree-de-vie-de-votre-chaudiere.png"
+  },
+  "les-solutions-pour-reduire-le-bruit-avec-du-double-vitrage": {
+      "slug": "les-solutions-pour-reduire-le-bruit-avec-du-double-vitrage",
+      "title": "Les solutions pour réduire le bruit avec du double vitrage",
+      "description": "Découvrez comment le double vitrage peut améliorer le confort acoustique de votre maison et les solutions pour en bénéficier efficacement.",
+      "date": "2026-08-08",
+      "category": "Vitrerie",
+      "content": [
+          "Le bruit ambiant peut être une source importante de gêne dans une habitation, surtout si vous vivez près de zones bruyantes telles que des routes ou des zones commerciales. Le double vitrage se présente comme une solution efficace pour atténuer ces nuisances sonores.",
+          "Le principe du double vitrage repose sur la mise en place de deux vitres séparées par une couche d'air ou de gaz. Cette configuration crée une barrière qui limite la propagation des ondes sonores, offrant ainsi un confort acoustique supérieur par rapport au simple vitrage.",
+          "En fonction de vos besoins, vous pouvez choisir différents types de double vitrage. Par exemple, le vitrage acoustique est spécialement conçu pour absorber les sons et pourra être une excellente option si vous souffrez d'une pollution sonore importante.",
+          "Il est essentiel de faire appel à un professionnel pour l'installation de votre double vitrage. Un expert comme ceux de Dépannage 49 à Angers saura vous conseiller sur le type de vitrage le plus adapté à votre situation et vous garantira une installation conforme et durable.",
+          "En plus de l'installation de double vitrage, des solutions complémentaires existent, comme l'ajout de rideaux efficaces ou l'isolation des fenêtres. Ces alternatives peuvent maximiser l'efficacité phonique et améliorer encore le confort de votre intérieur.",
+          "N'hésitez pas à contacter Dépannage 49 pour une évaluation de vos fenêtres et un devis sur mesure. Nous serons ravis de vous aider à améliorer votre qualité de vie et à réduire les nuisances sonores dans votre foyer."
+      ],
+      "seoTitle": "Double vitrage : silencieux à Angers - Dépannage 49",
+      "seoDescription": "Réduisez le bruit chez vous avec le double vitrage. Découvrez les solutions offertes par Dépannage 49 à Angers pour un meilleur confort acoustique.",
+      "imageUrl": "/images/actualites/les-solutions-pour-reduire-le-bruit-avec-du-double-vitrage.png"
   }
 };
 
