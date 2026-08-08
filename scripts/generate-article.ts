@@ -103,8 +103,7 @@ async function generateArticle() {
     console.log(`Article généré avec succès : "${newArticle.title}"`);
 
     // Mise à jour du fichier actualites.ts
-    const actualitesPath = path.join(process.cwd(), 'src', 'data', 'actualites.ts');
-    let actualitesFile = await fs.readFile(actualitesPath, 'utf8');
+    actualitesFile = await fs.readFile(actualitesPath, 'utf8');
 
     // On cherche la fin de l'objet actualitesData
     const insertPosition = actualitesFile.lastIndexOf('};');
@@ -126,36 +125,32 @@ async function generateArticle() {
     
     console.log("Fichier src/data/actualites.ts mis à jour avec succès ! L'article est maintenant publié sur le site.");
 
-    // --- PARTAGE FACEBOOK ---
-    if (process.env.FACEBOOK_PAGE_ID && process.env.FACEBOOK_ACCESS_TOKEN && process.env.FACEBOOK_PAGE_ID !== 'votre_page_id' && process.env.FACEBOOK_ACCESS_TOKEN !== 'votre_token') {
-      console.log("Publication sur Facebook en cours...");
-      const pageId = process.env.FACEBOOK_PAGE_ID;
-      const accessToken = process.env.FACEBOOK_ACCESS_TOKEN;
-      
-      // On génère l'URL de l'article (à adapter si votre vrai nom de domaine est différent)
+    // --- PARTAGE VIA MAKE.COM (WEBHOOK) ---
+    if (process.env.MAKE_WEBHOOK_URL && process.env.MAKE_WEBHOOK_URL.startsWith('http')) {
+      console.log("Envoi des informations à Make.com pour la publication Facebook...");
       const articleUrl = `https://depannage49.fr/actualites/${slug}`;
       const message = `✨ Nouvel article ! ✨\n\n${newArticle.title}\n\n${newArticle.description}\n\n👉 Lisez tous nos conseils ici : ${articleUrl}`;
       
-      const fbResponse = await fetch(`https://graph.facebook.com/v19.0/${pageId}/feed`, {
+      const makeResponse = await fetch(process.env.MAKE_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          title: newArticle.title,
           message: message,
-          link: articleUrl,
-          access_token: accessToken,
+          url: articleUrl,
+          imageUrl: newArticle.imageUrl
         }),
       });
 
-      const fbData = await fbResponse.json();
-      if (fbResponse.ok) {
-        console.log(`Article publié avec succès sur Facebook ! (ID de la publication: ${fbData.id})`);
+      if (makeResponse.ok) {
+        console.log("Les données ont été envoyées à Make.com avec succès ! Le scénario va prendre le relais.");
       } else {
-        console.error("Erreur lors de la publication sur Facebook :", fbData);
+        console.error("Erreur lors de l'envoi à Make.com :", await makeResponse.text());
       }
     } else {
-      console.log("Publication Facebook ignorée : Les clés FACEBOOK_PAGE_ID et FACEBOOK_ACCESS_TOKEN ne sont pas configurées.");
+      console.log("Publication externe ignorée : MAKE_WEBHOOK_URL n'est pas configuré.");
     }
 
   } catch (error) {
