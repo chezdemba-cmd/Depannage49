@@ -291,4 +291,5 @@ export const actualitesData: Record<string, ActualiteData> = {
   }
 };
 
-export const getActualitesList = () => Object.values(actualitesData);
+export const getActualitesList = () => 
+  Object.values(actualitesData).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
